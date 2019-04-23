@@ -1,0 +1,83 @@
+2019-04-23 14:06:41,352 DEBUG urllib3.connectionpool Starting new HTTPS connection (1): imv4.vk.com:443
+2019-04-23 14:06:49,456 DEBUG urllib3.connectionpool https://imv4.vk.com:443 "GET /im1822?act=a_check&key=4f9779165853cf0a47f52b8fa531b02eb5ca47ba&ts=1615557587&wait=25&mode=234&version=3 HTTP/1.1" 200 63
+2019-04-23 14:06:50,892 DEBUG urllib3.connectionpool https://imv4.vk.com:443 "GET /im1822?act=a_check&key=4f9779165853cf0a47f52b8fa531b02eb5ca47ba&ts=1615557589&wait=25&mode=234&version=3 HTTP/1.1" 200 141
+2019-04-23 14:06:50,923 DEBUG urllib3.connectionpool Starting new HTTPS connection (1): api.vk.com:443
+2019-04-23 14:06:51,111 DEBUG urllib3.connectionpool https://api.vk.com:443 "POST /method/users.get HTTP/1.1" 200 130
+2019-04-23 14:06:51,126 DEBUG root Дима прислал сообщение ['привет']
+2019-04-23 14:06:51,554 DEBUG urllib3.connectionpool https://api.vk.com:443 "POST /method/messages.send HTTP/1.1" 200 36
+2019-04-23 14:06:51,624 DEBUG urllib3.connectionpool https://imv4.vk.com:443 "GET /im1822?act=a_check&key=4f9779165853cf0a47f52b8fa531b02eb5ca47ba&ts=1615557592&wait=25&mode=234&version=3 HTTP/1.1" 200 185
+2019-04-23 14:06:51,872 DEBUG urllib3.connectionpool https://imv4.vk.com:443 "GET /im1822?act=a_check&key=4f9779165853cf0a47f52b8fa531b02eb5ca47ba&ts=1615557596&wait=25&mode=234&version=3 HTTP/1.1" 200 66
+2019-04-23 14:07:16,932 DEBUG urllib3.connectionpool https://imv4.vk.com:443 "GET /im1822?act=a_check&key=4f9779165853cf0a47f52b8fa531b02eb5ca47ba&ts=1615557597&wait=25&mode=234&version=3 HTTP/1.1" 200 47
+2019-04-23 14:07:41,978 DEBUG urllib3.connectionpool https://imv4.vk.com:443 "GET /im1822?act=a_check&key=4f9779165853cf0a47f52b8fa531b02eb5ca47ba&ts=1615557597&wait=25&mode=234&version=3 HTTP/1.1" 200 47
+2019-04-23 14:08:16,173 DEBUG urllib3.connectionpool Starting new HTTPS connection (1): imv4.vk.com:443
+2019-04-23 14:08:41,355 DEBUG urllib3.connectionpool https://imv4.vk.com:443 "GET /im1822?act=a_check&key=828988d4bf03830a95f354236ee9b0b24aca0e8a&ts=1615557597&wait=25&mode=234&version=3 HTTP/1.1" 200 47
+2019-04-23 14:09:06,404 DEBUG urllib3.connectionpool https://imv4.vk.com:443 "GET /im1822?act=a_check&key=828988d4bf03830a95f354236ee9b0b24aca0e8a&ts=1615557597&wait=25&mode=234&version=3 HTTP/1.1" 200 47
+2019-04-23 14:09:31,463 DEBUG urllib3.connectionpool https://imv4.vk.com:443 "GET /im1822?act=a_check&key=828988d4bf03830a95f354236ee9b0b24aca0e8a&ts=1615557597&wait=25&mode=234&version=3 HTTP/1.1" 200 47
+2019-04-23 14:09:56,500 DEBUG urllib3.connectionpool https://imv4.vk.com:443 "GET /im1822?act=a_check&key=828988d4bf03830a95f354236ee9b0b24aca0e8a&ts=1615557597&wait=25&mode=234&version=3 HTTP/1.1" 200 47
+2019-04-23 14:10:21,559 DEBUG urllib3.connectionpool https://imv4.vk.com:443 "GET /im1822?act=a_check&key=828988d4bf03830a95f354236ee9b0b24aca0e8a&ts=1615557597&wait=25&mode=234&version=3 HTTP/1.1" 200 47
+2019-04-23 14:10:46,600 DEBUG urllib3.connectionpool https://imv4.vk.com:443 "GET /im1822?act=a_check&key=828988d4bf03830a95f354236ee9b0b24aca0e8a&ts=1615557597&wait=25&mode=234&version=3 HTTP/1.1" 200 47
+2019-04-23 14:11:11,657 DEBUG urllib3.connectionpool https://imv4.vk.com:443 "GET /im1822?act=a_check&key=828988d4bf03830a95f354236ee9b0b24aca0e8a&ts=1615557597&wait=25&mode=234&version=3 HTTP/1.1" 200 47
+2019-04-23 14:11:13,851 DEBUG urllib3.connectionpool https://imv4.vk.com:443 "GET /im1822?act=a_check&key=828988d4bf03830a95f354236ee9b0b24aca0e8a&ts=1615557597&wait=25&mode=234&version=3 HTTP/1.1" 200 63
+2019-04-23 14:11:15,527 DEBUG urllib3.connectionpool https://imv4.vk.com:443 "GET /im1822?act=a_check&key=828988d4bf03830a95f354236ee9b0b24aca0e8a&ts=1615557599&wait=25&mode=234&version=3 HTTP/1.1" 200 141
+2019-04-23 14:11:15,558 DEBUG urllib3.connectionpool Starting new HTTPS connection (1): api.vk.com:443
+2019-04-23 14:11:15,749 DEBUG urllib3.connectionpool https://api.vk.com:443 "POST /method/users.get HTTP/1.1" 200 130
+2019-04-23 14:11:16,164 DEBUG urllib3.connectionpool https://api.vk.com:443 "POST /method/users.get HTTP/1.1" 200 130
+2019-04-23 14:11:46,493 DEBUG urllib3.connectionpool Starting new HTTPS connection (1): imv4.vk.com:443
+2019-04-23 14:11:58,874 DEBUG urllib3.connectionpool https://imv4.vk.com:443 "GET /im1822?act=a_check&key=4e0d47b9d2ed4b533dfc1e18f392efe390c50ff9&ts=1615557602&wait=25&mode=234&version=3 HTTP/1.1" 200 63
+2019-04-23 14:12:07,769 DEBUG urllib3.connectionpool https://imv4.vk.com:443 "GET /im1822?act=a_check&key=4e0d47b9d2ed4b533dfc1e18f392efe390c50ff9&ts=1615557604&wait=25&mode=234&version=3 HTTP/1.1" 200 115
+2019-04-23 14:12:07,800 DEBUG urllib3.connectionpool Starting new HTTPS connection (1): api.vk.com:443
+2019-04-23 14:12:07,979 DEBUG urllib3.connectionpool https://api.vk.com:443 "POST /method/users.get HTTP/1.1" 200 130
+2019-04-23 14:12:08,387 DEBUG urllib3.connectionpool https://api.vk.com:443 "POST /method/users.get HTTP/1.1" 200 130
+2019-04-23 14:12:08,387 INFO root Новый пользователь Дима(id=201103513)
+2019-04-23 14:12:08,685 DEBUG root Дима прислал сообщение ['привет']
+2019-04-23 14:12:08,824 DEBUG urllib3.connectionpool https://api.vk.com:443 "POST /method/messages.send HTTP/1.1" 200 36
+2019-04-23 14:12:08,875 DEBUG urllib3.connectionpool https://imv4.vk.com:443 "GET /im1822?act=a_check&key=4e0d47b9d2ed4b533dfc1e18f392efe390c50ff9&ts=1615557605&wait=25&mode=234&version=3 HTTP/1.1" 200 181
+2019-04-23 14:12:09,399 DEBUG urllib3.connectionpool https://imv4.vk.com:443 "GET /im1822?act=a_check&key=4e0d47b9d2ed4b533dfc1e18f392efe390c50ff9&ts=1615557609&wait=25&mode=234&version=3 HTTP/1.1" 200 66
+2019-04-23 14:12:34,451 DEBUG urllib3.connectionpool https://imv4.vk.com:443 "GET /im1822?act=a_check&key=4e0d47b9d2ed4b533dfc1e18f392efe390c50ff9&ts=1615557610&wait=25&mode=234&version=3 HTTP/1.1" 200 47
+2019-04-23 14:13:03,692 DEBUG urllib3.connectionpool Starting new HTTPS connection (1): imv4.vk.com:443
+2019-04-23 14:13:16,498 DEBUG urllib3.connectionpool https://imv4.vk.com:443 "GET /im1822?act=a_check&key=3f13eb93f3c4da7c306105764b6d6628f8c1e7f5&ts=1615557610&wait=25&mode=234&version=3 HTTP/1.1" 200 63
+2019-04-23 14:13:17,548 DEBUG urllib3.connectionpool https://imv4.vk.com:443 "GET /im1822?act=a_check&key=3f13eb93f3c4da7c306105764b6d6628f8c1e7f5&ts=1615557612&wait=25&mode=234&version=3 HTTP/1.1" 200 133
+2019-04-23 14:13:17,579 DEBUG urllib3.connectionpool Starting new HTTPS connection (1): api.vk.com:443
+2019-04-23 14:13:17,778 DEBUG urllib3.connectionpool https://api.vk.com:443 "POST /method/users.get HTTP/1.1" 200 130
+2019-04-23 14:13:17,778 DEBUG root Дима прислал сообщение ['пп']
+2019-04-23 14:13:18,257 DEBUG urllib3.connectionpool https://api.vk.com:443 "POST /method/messages.send HTTP/1.1" 200 36
+2019-04-23 14:13:18,304 DEBUG urllib3.connectionpool https://imv4.vk.com:443 "GET /im1822?act=a_check&key=3f13eb93f3c4da7c306105764b6d6628f8c1e7f5&ts=1615557615&wait=25&mode=234&version=3 HTTP/1.1" 200 199
+2019-04-23 14:13:18,575 DEBUG urllib3.connectionpool https://imv4.vk.com:443 "GET /im1822?act=a_check&key=3f13eb93f3c4da7c306105764b6d6628f8c1e7f5&ts=1615557619&wait=25&mode=234&version=3 HTTP/1.1" 200 66
+2019-04-23 14:13:43,614 DEBUG urllib3.connectionpool https://imv4.vk.com:443 "GET /im1822?act=a_check&key=3f13eb93f3c4da7c306105764b6d6628f8c1e7f5&ts=1615557620&wait=25&mode=234&version=3 HTTP/1.1" 200 47
+2019-04-23 14:14:08,673 DEBUG urllib3.connectionpool https://imv4.vk.com:443 "GET /im1822?act=a_check&key=3f13eb93f3c4da7c306105764b6d6628f8c1e7f5&ts=1615557620&wait=25&mode=234&version=3 HTTP/1.1" 200 47
+2019-04-23 14:14:33,724 DEBUG urllib3.connectionpool https://imv4.vk.com:443 "GET /im1822?act=a_check&key=3f13eb93f3c4da7c306105764b6d6628f8c1e7f5&ts=1615557620&wait=25&mode=234&version=3 HTTP/1.1" 200 47
+2019-04-23 14:14:58,766 DEBUG urllib3.connectionpool https://imv4.vk.com:443 "GET /im1822?act=a_check&key=3f13eb93f3c4da7c306105764b6d6628f8c1e7f5&ts=1615557620&wait=25&mode=234&version=3 HTTP/1.1" 200 47
+2019-04-23 14:15:23,828 DEBUG urllib3.connectionpool https://imv4.vk.com:443 "GET /im1822?act=a_check&key=3f13eb93f3c4da7c306105764b6d6628f8c1e7f5&ts=1615557620&wait=25&mode=234&version=3 HTTP/1.1" 200 47
+2019-04-23 14:15:48,882 DEBUG urllib3.connectionpool https://imv4.vk.com:443 "GET /im1822?act=a_check&key=3f13eb93f3c4da7c306105764b6d6628f8c1e7f5&ts=1615557620&wait=25&mode=234&version=3 HTTP/1.1" 200 47
+2019-04-23 14:16:13,930 DEBUG urllib3.connectionpool https://imv4.vk.com:443 "GET /im1822?act=a_check&key=3f13eb93f3c4da7c306105764b6d6628f8c1e7f5&ts=1615557620&wait=25&mode=234&version=3 HTTP/1.1" 200 47
+2019-04-23 14:16:38,975 DEBUG urllib3.connectionpool https://imv4.vk.com:443 "GET /im1822?act=a_check&key=3f13eb93f3c4da7c306105764b6d6628f8c1e7f5&ts=1615557620&wait=25&mode=234&version=3 HTTP/1.1" 200 47
+2019-04-23 14:17:04,027 DEBUG urllib3.connectionpool https://imv4.vk.com:443 "GET /im1822?act=a_check&key=3f13eb93f3c4da7c306105764b6d6628f8c1e7f5&ts=1615557620&wait=25&mode=234&version=3 HTTP/1.1" 200 47
+2019-04-23 14:17:29,086 DEBUG urllib3.connectionpool https://imv4.vk.com:443 "GET /im1822?act=a_check&key=3f13eb93f3c4da7c306105764b6d6628f8c1e7f5&ts=1615557620&wait=25&mode=234&version=3 HTTP/1.1" 200 47
+2019-04-23 14:17:54,154 DEBUG urllib3.connectionpool https://imv4.vk.com:443 "GET /im1822?act=a_check&key=3f13eb93f3c4da7c306105764b6d6628f8c1e7f5&ts=1615557620&wait=25&mode=234&version=3 HTTP/1.1" 200 47
+2019-04-23 14:18:19,204 DEBUG urllib3.connectionpool https://imv4.vk.com:443 "GET /im1822?act=a_check&key=3f13eb93f3c4da7c306105764b6d6628f8c1e7f5&ts=1615557620&wait=25&mode=234&version=3 HTTP/1.1" 200 47
+2019-04-23 14:18:44,260 DEBUG urllib3.connectionpool https://imv4.vk.com:443 "GET /im1822?act=a_check&key=3f13eb93f3c4da7c306105764b6d6628f8c1e7f5&ts=1615557620&wait=25&mode=234&version=3 HTTP/1.1" 200 47
+2019-04-23 14:19:09,319 DEBUG urllib3.connectionpool https://imv4.vk.com:443 "GET /im1822?act=a_check&key=3f13eb93f3c4da7c306105764b6d6628f8c1e7f5&ts=1615557620&wait=25&mode=234&version=3 HTTP/1.1" 200 47
+2019-04-23 14:22:32,174 DEBUG urllib3.connectionpool Starting new HTTPS connection (1): imv4.vk.com:443
+2019-04-23 14:22:35,484 DEBUG urllib3.connectionpool https://imv4.vk.com:443 "GET /im1822?act=a_check&key=751e877e437094829bc1f01225139b03125ffddf&ts=1615557628&wait=25&mode=234&version=3 HTTP/1.1" 200 63
+2019-04-23 14:22:36,393 DEBUG urllib3.connectionpool https://imv4.vk.com:443 "GET /im1822?act=a_check&key=751e877e437094829bc1f01225139b03125ffddf&ts=1615557630&wait=25&mode=234&version=3 HTTP/1.1" 200 105
+2019-04-23 14:22:36,430 DEBUG urllib3.connectionpool Starting new HTTPS connection (1): api.vk.com:443
+2019-04-23 14:22:36,617 DEBUG urllib3.connectionpool https://api.vk.com:443 "POST /method/users.get HTTP/1.1" 200 130
+2019-04-23 14:22:36,639 DEBUG root Дима прислал сообщение ['а']
+2019-04-23 14:22:37,080 DEBUG urllib3.connectionpool https://api.vk.com:443 "POST /method/messages.send HTTP/1.1" 200 36
+2019-04-23 14:22:37,143 DEBUG urllib3.connectionpool https://imv4.vk.com:443 "GET /im1822?act=a_check&key=751e877e437094829bc1f01225139b03125ffddf&ts=1615557631&wait=25&mode=234&version=3 HTTP/1.1" 200 199
+2019-04-23 14:22:37,411 DEBUG urllib3.connectionpool https://imv4.vk.com:443 "GET /im1822?act=a_check&key=751e877e437094829bc1f01225139b03125ffddf&ts=1615557635&wait=25&mode=234&version=3 HTTP/1.1" 200 66
+2019-04-23 14:23:02,483 DEBUG urllib3.connectionpool https://imv4.vk.com:443 "GET /im1822?act=a_check&key=751e877e437094829bc1f01225139b03125ffddf&ts=1615557636&wait=25&mode=234&version=3 HTTP/1.1" 200 47
+2019-04-23 14:23:27,521 DEBUG urllib3.connectionpool https://imv4.vk.com:443 "GET /im1822?act=a_check&key=751e877e437094829bc1f01225139b03125ffddf&ts=1615557636&wait=25&mode=234&version=3 HTTP/1.1" 200 47
+2019-04-23 14:23:41,565 DEBUG urllib3.connectionpool Starting new HTTPS connection (1): imv4.vk.com:443
+2019-04-23 14:23:42,021 DEBUG urllib3.connectionpool https://imv4.vk.com:443 "GET /im1822?act=a_check&key=32b07d76b26a73a8d86124a5f98bbb54e38eb6e2&ts=1615557636&wait=25&mode=234&version=3 HTTP/1.1" 200 63
+2019-04-23 14:23:42,663 DEBUG urllib3.connectionpool https://imv4.vk.com:443 "GET /im1822?act=a_check&key=32b07d76b26a73a8d86124a5f98bbb54e38eb6e2&ts=1615557638&wait=25&mode=234&version=3 HTTP/1.1" 200 131
+2019-04-23 14:23:42,750 DEBUG urllib3.connectionpool Starting new HTTPS connection (1): api.vk.com:443
+2019-04-23 14:23:43,042 DEBUG urllib3.connectionpool https://api.vk.com:443 "POST /method/users.get HTTP/1.1" 200 130
+2019-04-23 14:23:43,447 DEBUG urllib3.connectionpool https://api.vk.com:443 "POST /method/users.get HTTP/1.1" 200 130
+2019-04-23 14:23:43,463 INFO root Новый пользователь Дима(id=201103513)
+2019-04-23 14:23:43,909 DEBUG root Дима прислал сообщение ['р']
+2019-04-23 14:23:44,019 DEBUG urllib3.connectionpool https://api.vk.com:443 "POST /method/messages.send HTTP/1.1" 200 36
+2019-04-23 14:23:44,070 DEBUG urllib3.connectionpool https://imv4.vk.com:443 "GET /im1822?act=a_check&key=32b07d76b26a73a8d86124a5f98bbb54e38eb6e2&ts=1615557641&wait=25&mode=234&version=3 HTTP/1.1" 200 199
+2019-04-23 14:23:44,666 DEBUG urllib3.connectionpool https://imv4.vk.com:443 "GET /im1822?act=a_check&key=32b07d76b26a73a8d86124a5f98bbb54e38eb6e2&ts=1615557645&wait=25&mode=234&version=3 HTTP/1.1" 200 66
+2019-04-23 14:24:09,807 DEBUG urllib3.connectionpool https://imv4.vk.com:443 "GET /im1822?act=a_check&key=32b07d76b26a73a8d86124a5f98bbb54e38eb6e2&ts=1615557646&wait=25&mode=234&version=3 HTTP/1.1" 200 47
+2019-04-23 14:28:10,261 INFO root Новый пользователь Дима(id=201103513)

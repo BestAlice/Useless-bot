@@ -23,10 +23,12 @@ def main():
         if event.type == VkEventType.MESSAGE_NEW and event.to_me:
             info = user_information(event.user_id)
             user = user_model.get(info['id'])
+            # (id, user_id, Имя, id собеседника(0, если его нет))
+            print(user)
             all_request = event.text.lower()
             all_request = "".join(l for l in all_request if l not in string.punctuation) 
             request = all_request.split()
-            logging.info('{} прислал сообщение {}'.format(info['first_name'], request))
+            logging.debug('{} прислал сообщение {}'.format(info['first_name'], request))
             print(request)
             response = []
             for word in request:
@@ -37,7 +39,6 @@ def main():
                     user_model.delete_user(event.user_id)
                     logging.info('Завершение диалога с {}(id={})'.format(info['first_name'], info['id']))
                 elif len(response) == 0:
-                    print(response)
                     response.append("Не понялa вашего ответа..")
             response = map(lambda x: x[0].upper() + x[1:] + '. ', response)
             response = ''.join(response)
