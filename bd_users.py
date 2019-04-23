@@ -43,12 +43,11 @@ class UserModel:
         cursor = self.connection.cursor()
         cursor.execute("SELECT * FROM users WHERE user_id = ?", (str(user_id),))
         row = cursor.fetchone()
-        if row:
-            return row
-        else:
+        if row is None:
             info = user_information(user_id)
             self.insert(user_id, info['first_name'], 0)
-            self.get(user_id)
+            row = self.get(user_id)
+        return(row)
     
     def delete_user(self, user_id):
         cursor = self.connection.cursor()

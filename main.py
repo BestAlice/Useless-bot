@@ -23,7 +23,7 @@ def main():
         if event.type == VkEventType.MESSAGE_NEW and event.to_me:
             info = user_information(event.user_id)
             user = user_model.get(info['id'])
-            # (id, user_id, Имя, id собеседника(0, если его нет))
+            # (id, user_id, Имя, id собеседника (0, если его нет))
             print(user)
             all_request = event.text.lower()
             all_request = "".join(l for l in all_request if l not in string.punctuation) 
@@ -31,10 +31,13 @@ def main():
             logging.debug('{} прислал сообщение {}'.format(info['first_name'], request))
             print(request)
             response = []
+            for fraze in TALK:
+                if fraze in all_request:
+                    pass
             for word in request:
                 if word in HELLO:
                     response.append(random.choice(HELLO) + ', ' + info['first_name'])
-                if word == "пока" and len(response) == 0:
+                elif word == "пока" and len(response) == 0:
                     response.append("Пока")
                     user_model.delete_user(event.user_id)
                     logging.info('Завершение диалога с {}(id={})'.format(info['first_name'], info['id']))
@@ -43,6 +46,7 @@ def main():
             response = map(lambda x: x[0].upper() + x[1:] + '. ', response)
             response = ''.join(response)
             write_msg(event.user_id, response) 
+
 
 if __name__ == '__main__':
     main()

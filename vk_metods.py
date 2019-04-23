@@ -12,3 +12,12 @@ def user_information(user_id):
                 'fields': ['first_name'] 
                 }
     return (vk.method('users.get', need_info))[0]
+
+def my_anonim_friend(user_id, name):
+    params = {
+             'user_id': user_id,
+             'q': name,
+             'count': 1,
+             'fields': ['photo_max_orig']
+             }
+    vk.method('users.search')
