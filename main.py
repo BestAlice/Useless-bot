@@ -37,11 +37,16 @@ def main():
             for word in request:
                 if word in HELLO:
                     response.append(random.choice(HELLO) + ', ' + info['first_name'])
-                elif word == "пока" and len(response) == 0:
+                if word == "клава":
+                    keyboard_vk(event.user_id)
+                if word == "вики":
+                    wiki = True
+                    response.append("Введите запрос")
+                if word == "пока" and len(response) == 0:
                     response.append("Пока")
                     user_model.delete_user(event.user_id)
                     logging.info('Завершение диалога с {}(id={})'.format(info['first_name'], info['id']))
-                elif len(response) == 0:
+                if len(response) == 0:
                     response.append("Не понялa вашего ответа..")
             response = map(lambda x: x[0].upper() + x[1:] + '. ', response)
             response = ''.join(response)
