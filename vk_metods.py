@@ -10,7 +10,7 @@ def write_msg(user_id, message):
 def user_information(user_id):
     need_info = {
                 'user_id': user_id,
-                'fields': ['first_name'] 
+                'fields': ['first_name',  'can_write_private_message']
                 }
     return (vk.method('users.get', need_info))[0]
 

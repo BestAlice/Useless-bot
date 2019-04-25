@@ -36,6 +36,8 @@ def main():
             print(request)
             response = []
             if user[3] != 0:
+                info_2 = user_information(user[3])
+                user_2 = user_model.get(info_2['id'])
                 for word in STOP_DIALOG:
                     if word in all_request:
                         user_model.stop_dialog(user[0], user[3])
@@ -55,34 +57,35 @@ def main():
                         user_2 = user_model.get(info_2['id'])
                         if user_2[3] != 0:
                             write_msg(event.user_id, 'Собеседник уже сосотоит в диалоге')
+                            continue
                         if user[3] != 0:
                             user_model.stop_dialog(event.user_id, user[3])
                         user_model.new_dialog(info['id'], info_2['id'])
                         write_msg(info['id'], 'Начат диалог')
                         write_msg(info_2['id'], 'Начат диалог')
+                        continue
                 if wiki:
-                    response.append('Вот что я нашёл: \n' + str(wikipedia.summary(event.text)))
-                    wiki = False
-                else:
-                    for word in request:
-                        if word in HELLO:
-                            response.append(random.choice(HELLO) + ', ' + info['first_name'])
-                        #if 'httpsvkcom' in word:
-                        #    name = word[11:]
-                        #    person_id = id_by_name(name)
-                        #    print(person_id)
-                        if word == "клава":
-                            keyboard_vk(event.user_id)
-                            response.append("..")
-                        if word == "вики":
-                            wiki = True
-                            response.append("Введите запрос")
-                        if word == "пока" and len(response) == 0:
-                            response.append("Пока")
-                            user_model.delete_user(event.user_id)
-                            logging.info('Завершение диалога с {}(id={})'.format(info['first_name'], info['id']))
-                        if len(response) == 0:
-                            response.append("Не понялa вашего ответа..")
+                    try:
+                        write_msg(event.user_id,'Вот что я нашёл: \n' + str(wikipedia.summary(event.text)))
+                        wiki = False
+                    except:
+                        write_msg(event.user_id,'По запросу ничего не найдено. Измените запрос')
+                    continue
+                for word in request:
+                    if word in HELLO:
+                        response.append(random.choice(HELLO) + ', ' + info['first_name'])
+                    if word == "клава":
+                        keyboard_vk(event.user_id)
+                        response.append("..")
+                    if word == "вики":
+                        wiki = True
+                        response.append("Введите запрос")
+                    if word == "пока" and len(response) == 0:
+                        response.append("Пока")
+                        user_model.delete_user(event.user_id)
+                        logging.info('Завершение диалога с {}(id={})'.format(info['first_name'], info['id']))
+                    if len(response) == 0:
+                        response.append("Не понялa вашего ответа..")
                 response = map(lambda x: x[0].upper() + x[1:] + '. ', response)
                 response = ''.join(response)
                 write_msg(event.user_id, response) 
