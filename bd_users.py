@@ -43,13 +43,27 @@ class UserModel:
         cursor = self.connection.cursor()
         cursor.execute("SELECT * FROM users WHERE user_id = ?", (str(user_id),))
         row = cursor.fetchone()
-        if row:
-            return row
-        else:
+        if row is None:
             info = user_information(user_id)
             self.insert(user_id, info['first_name'], 0)
-            self.get(user_id)
+            row = self.get(user_id)
+        return(row)
     
+    def new_dialog(self, id_1, id_2):
+        cursor = self.connection.cursor()
+        cursor.execute('''UPDATE users SET dialog = ? WHERE user_id = ?''',(str(id_2),str(id_1)))
+        cursor.execute('''UPDATE users SET dialog = ? WHERE user_id = ?''',(str(id_1),str(id_2)))
+        cursor.close()
+        self.connection.commit()
+
+    def stop_dialog(self, id_1, id_2):
+        cursor = self.connection.cursor()
+        cursor.execute('''UPDATE users SET dialog = ? WHERE user_id = ?''',(str(0),str(id_1)))
+        cursor.execute('''UPDATE users SET dialog = ? WHERE user_id = ?''',(str(0),str(id_2)))
+        cursor.close()
+        self.connection.commit()
+
+
     def delete_user(self, user_id):
         cursor = self.connection.cursor()
         self.get(user_id)

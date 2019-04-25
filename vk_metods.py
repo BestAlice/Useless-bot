@@ -14,6 +14,10 @@ def user_information(user_id):
                 }
     return (vk.method('users.get', need_info))[0]
 
+def id_by_name(name):
+    this_id = vk.method('utils.resolveScreenName', {'screen_name': name})
+    return this_id['object_id'] if this_id['type'] == 'user' else 'error'
+
 def keyboard_vk(user_id):
     keyboard = VkKeyboard(one_time=True)
     keyboard.add_button('Сарказм', color=VkKeyboardColor.DEFAULT)
