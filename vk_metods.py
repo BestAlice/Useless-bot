@@ -9,7 +9,10 @@ token = "f9a38be71df81831bd854f44bf26613d5f91dd6edeec8164f45261f5def3aba84d019b1
 vk = vk_api.VkApi(token=token)
 
 def write_msg(user_id, message):
-    vk.method('messages.send', {'user_id': user_id, 'message': message, "random_id":int(random.uniform(0, 1000000))})
+    try:
+        vk.method('messages.send', {'user_id': user_id, 'message': message, "random_id":int(random.uniform(0, 1000000))})
+    except:
+        print('Ошибка отправки сообщения')
 
 def user_information(user_id):
     need_info = {
