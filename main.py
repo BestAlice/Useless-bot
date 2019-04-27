@@ -24,6 +24,7 @@ def main():
     user_model = UserModel(db.get_connection())
     for event in longpoll.listen():
         if event.type == VkEventType.MESSAGE_NEW and event.to_me:
+            weather = False
             info = user_information(event.user_id)
             user = user_model.get(info['id'])
             # (id, user_id, Имя, id собеседника (0, если его нет), значение wiki 0 или 1)
@@ -51,7 +52,7 @@ def main():
                         if user[3] != 0:
                             user_model.stop_dialog(event.user_id, user[3])
                             write_msg(info['id'], 'Диалог завершён')
-                            write_msg(user[4], 'Диалог завершён')
+                            write_msg(user[3], 'Диалог завершён')
                         user_model.new_dialog(info['id'], info_2['id'])
                         write_msg(info['id'], 'Начат диалог')
                         write_msg(info_2['id'], 'Начат диалог')
@@ -61,7 +62,9 @@ def main():
                 user_2 = user_model.get(info_2['id'])
                 for word in STOP_DIALOG:
                     if word in all_request:
-                        user_model.stop_dialog(user[0], user[3])
+                        user_model.stop_dialog(user[1], user[3])
+                        write_msg(info['id'], 'Диалог завершён')
+                        write_msg(user[3], 'Диалог завершён')
                         break
                 else:
                     write_msg(user[3], event.text)
@@ -90,9 +93,13 @@ def main():
                             stroka += st[:-1]
                         response.append(stroka)
                         helps.close()
-                    if word == "погода":
-                        weather_vk(event.user_id)
+                    if weather:
+                        weather_vk(event.user_id, word)
                         response.append(".^_^")
+                        weather =False
+                    if word == "погода":
+                        weather = True
+                        continue
                     if word == "вики":
                         user_model.wiki(info['id'], 1)
                         response.append("Введите запрос")
@@ -107,6 +114,10 @@ def main():
                         logging.info('Завершение диалога с {}(id={})'.format(info['first_name'], info['id']))
                     if len(response) == 0:
                         response.append("Не понялa вашего ответа..")
+                if weather:
+                    weather_vk(event.user_id)
+                    response.append(".^_^")
+                weather =False
                 response = map(lambda x: x[0].upper() + x[1:] + '. ', response)
                 response = ''.join(response)
                 write_msg(event.user_id, response) 
